@@ -9,7 +9,7 @@
     "baileys",
     "nodejs"
   ],
-  "stack": "heroku-22",
+  "stack": "heroku-24",
   "formation": {
     "worker": {
       "quantity": 1,
