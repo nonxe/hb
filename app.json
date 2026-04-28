@@ -1,0 +1,68 @@
+{
+  "name": "Hermit MD",
+  "description": "Hermit-md - Simple WhatsApp Multi Device bot based on Baileys.",
+  "repository": "https://github.com/A-d-i-t-h-y-a-n/hermit-bot",
+  "logo": "https://i.imgur.com/6oRG106.jpeg",
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "nodejs"
+  ],
+  "stack": "heroku-22",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "env": {
+    "SESSION_ID": {
+      "description": "Encrypted session string generated from the session site.",
+      "required": true
+    },
+    "DATABASE_URL": {
+      "description": "PostgreSQL database URL for bot data.",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Command prefix regex. Example: ^[.,!]",
+      "value": "^[.,!]",
+      "required": false
+    },
+    "SUDO": {
+      "description": "Comma-separated owner numbers (without +).",
+      "required": false
+    },
+    "MODE": {
+      "description": "Bot mode: private or public.",
+      "value": "private",
+      "required": false
+    },
+    "LOG_MSG": {
+      "description": "Enable command/message logs.",
+      "value": "false",
+      "required": false
+    },
+    "AUTO_STATUS_VIEW": {
+      "description": "Auto-view WhatsApp status updates.",
+      "value": "false",
+      "required": false
+    },
+    "READ_MSG": {
+      "description": "Auto-mark incoming messages as read.",
+      "value": "false",
+      "required": false
+    },
+    "ALWAYS_ONLINE": {
+      "description": "Keep bot shown as online.",
+      "value": "false",
+      "required": false
+    },
+    "START_MSG": {
+      "description": "Send startup message when connected.",
+      "value": "true",
+      "required": false
+    }
+  }
+}

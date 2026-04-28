@@ -11,6 +11,23 @@ Hermit-md - Simple whatsapp Multi Device whatsapp bot.
 
 ---
 
+
+### DEPLOY TO HEROKU
+
+1. Create a Heroku account if you don't already have one.
+   <br>
+<a href='https://signup.heroku.com/' target="_blank"><img alt='heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
+
+2. Create a PostgreSQL database and copy your `DATABASE_URL`.
+
+3. Generate your `SESSION_ID` and keep it ready.
+
+4. Deploy with one click.
+   <br>
+<a href='https://heroku.com/deploy?template=https://github.com/A-d-i-t-h-y-a-n/hermit-bot' target="_blank"><img alt='DEPLOY TO HEROKU' src='https://www.herokucdn.com/deploy/button.svg'/></a>
+
+---
+
 <!--
 ### Privacy and Security
 
