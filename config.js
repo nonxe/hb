@@ -9,7 +9,7 @@ const toBool = (x) => (x && x.toLowerCase() === 'true') || false;
 global.apikey = { 'https://api.adithyan.xyz': 'free' };
 global.apiUrl = 'https://hermit-api.koyeb.app/';
 
-const DATABASE_URL = process.env.DATABASE_URL || './database.db';
+const DATABASE_URL = process.env.DATABASE_URL || process.env.mongoUrl || './database.db';
 process.env.NODE_OPTIONS = '--max_old_space_size=2560';
 const hasCaCert = !!process.env.PG_CA_CERT;
 
